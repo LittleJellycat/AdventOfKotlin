@@ -12,8 +12,9 @@ fun main(args: Array<String>) {
 }
 
 fun findHashWithZeroes(key: String, numberOfZeroes: Int): Int {
-    return (1..Int.MAX_VALUE).first {DatatypeConverter.printHexBinary(
-        MessageDigest.getInstance("MD5")
-                .digest((key + it).toByteArray())).startsWith("0".repeat(numberOfZeroes))
+    return (1..Int.MAX_VALUE).first {
+        DatatypeConverter.printHexBinary(
+                MessageDigest.getInstance("MD5")
+                        .digest((key + it).toByteArray())).startsWith("0".repeat(numberOfZeroes))
     }
 }
