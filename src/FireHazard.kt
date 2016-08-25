@@ -5,8 +5,8 @@ import java.io.File
  */
 
 fun main(args: Array<String>) {
-    val rawInstructions: List<Triple<String, Pair<Int, Int>, Pair<Int, Int>>> = File("C:\\Users\\kotat\\input.txt").readLines().map { parseInstructions(it) }
-    println(getLightsPattern(rawInstructions))
+    val instructions = File("C:\\Users\\kotat\\input.txt").readLines().map { parseInstructions(it) }
+    println(getLightsPattern(instructions))
 }
 
 fun parseInstructions(line: String): Triple<String, Pair<Int, Int>, Pair<Int, Int>> {
@@ -25,30 +25,17 @@ fun getLightsPattern(instructions: List<Triple<String, Pair<Int, Int>, Pair<Int,
     for (instruction in instructions) {
         val start: Pair<Int, Int> = instruction.second
         val end: Pair<Int, Int> = instruction.third
-        if (instruction.first == "on") {
-            for (i in start.first..end.first) {
-                for (j in start.second..end.second) {
+        for (i in start.first..end.first) {
+            for (j in start.second..end.second) {
+                if (instruction.first == "on") {
                     lights[i][j] = true
-                }
-            }
-        } else if (instruction.first == "off") {
-            for (i in start.first..end.first) {
-                for (j in start.second..end.second) {
+                } else if (instruction.first == "off") {
                     lights[i][j] = false
-                }
-            }
-        } else { //toggle
-            for (i in start.first..end.first) {
-                for (j in start.second..end.second) {
+                } else { //toggle
                     lights[i][j] = !lights[i][j]
                 }
             }
-
         }
     }
-    val tempArr: IntArray = IntArray(1000)
-    for (i in 0..999) {
-        tempArr[i] = lights[i].count { it == true }
-    }
-    return tempArr.sum()
+    return lights.flatMap { it.asIterable() }.count{it}
 }
