@@ -7,6 +7,29 @@ import java.io.File
 fun main(args: Array<String>) {
     val instructions = File("C:\\Users\\kotat\\input.txt").readLines().map { parseInstructions(it) }
     println(getLightsPattern(instructions))
+    println(getNordicLightsPattern(instructions))
+}
+
+fun getNordicLightsPattern(instructions: List<Triple<String, Pair<Int, Int>, Pair<Int, Int>>>): Int {
+    val lights: Array<IntArray> = Array(1000) { IntArray(1000) { 0 } }
+    for (instruction in instructions) {
+        val start: Pair<Int, Int> = instruction.second
+        val end: Pair<Int, Int> = instruction.third
+        for (i in start.first..end.first) {
+            for (j in start.second..end.second) {
+                if (instruction.first == "on") {
+                    lights[i][j]++
+                } else if (instruction.first == "off") {
+                    if(lights[i][j] != 0) {
+                        lights[i][j]--
+                    }
+                } else { //toggle
+                    lights[i][j] +=2
+                }
+            }
+        }
+    }
+    return lights.flatMap { it.asIterable() }.sum()
 }
 
 fun parseInstructions(line: String): Triple<String, Pair<Int, Int>, Pair<Int, Int>> {
