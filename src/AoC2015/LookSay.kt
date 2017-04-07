@@ -1,3 +1,5 @@
+package AoC2015
+
 fun main(args: Array<String>) {
     val input = "1113122113"
     var saidInput = input.toList()

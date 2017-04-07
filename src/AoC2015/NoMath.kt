@@ -1,8 +1,6 @@
-import java.io.File
+package AoC2015
 
-/**
- * Created by Jelly on 22.08.2016.
- */
+import java.io.File
 
 fun main(args: Array<String>) {
     val dimensionsList = File("C:\\Users\\kotat\\input.txt").readLines()

@@ -1,8 +1,6 @@
-import java.io.File
+package AoC2015
 
-/**
-* Created by Jelly on 23.08.2016.
-*/
+import java.io.File
 
 fun sumHouses(trace: String): MutableSet<Pair<Int, Int>>{
     var x = 0

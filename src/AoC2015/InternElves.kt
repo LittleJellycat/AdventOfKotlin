@@ -1,13 +1,12 @@
+package AoC2015
+
 import java.io.File
 
-/**
- * Created by Jelly on 23.08.2016.
- */
 
 fun main(args: Array<String>) {
     val testStrings = File("C:\\Users\\kotat\\input.txt").readLines()
-    println(testStrings.asSequence().filter { isNice(it)}.count())
-    println(testStrings.asSequence().filter { isEvenNicer(it)}.count())
+    println(testStrings.asSequence().filter(::isNice).count())
+    println(testStrings.asSequence().filter(::isEvenNicer).count())
 }
 
 fun isNice(str: String): Boolean {

@@ -1,8 +1,7 @@
+package AoC2015
+
 import java.io.File
 
-/**
- * Created by Jelly on 24.08.2016.
- */
 
 fun main(args: Array<String>) {
     val instructions = File("C:\\Users\\kotat\\input.txt").readLines().map { parseInstructions(it) }

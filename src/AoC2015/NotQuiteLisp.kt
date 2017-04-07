@@ -1,8 +1,7 @@
+package AoC2015
+
 import java.io.File
 
-/**
- * Created by Jelly on 22.08.2016.
- */
 fun findBasement(trace: String): Int {
     var level = 0
     for (i in (0..trace.length - 1)) { //boring solution

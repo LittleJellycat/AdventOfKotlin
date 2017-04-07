@@ -1,3 +1,5 @@
+package AoC2015
+
 import java.util.*
 
 /*This solution takes too long to calculate the answer. The output is correct though.

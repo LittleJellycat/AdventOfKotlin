@@ -1,10 +1,9 @@
+package AoC2015
+
 import java.io.File
 import java.security.MessageDigest
 import javax.xml.bind.DatatypeConverter
 
-/**
- * Created by Jelly on 23.08.2016.
- */
 fun main(args: Array<String>) {
     val key = File("C:\\Users\\kotat\\input.txt").readText()
     println(findHashWithZeroes(key, 5)) //part 1

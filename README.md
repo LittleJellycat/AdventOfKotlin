@@ -6,7 +6,7 @@ Puzzles are solved in Kotlin language.
 
 Some of them were solved but not commited yet. I hope I'll add those ASAP. README.md is under construction. :D
 
-Click on the year to check out the puzzles. Click on the puzzle name to look on my solution.
+Click on the year to AoC2015.check out the puzzles. Click on the puzzle name to look on my solution.
 
 ***
 |[2015](http://adventofcode.com/2015)  | Day  |[2016](http://adventofcode.com/2016)  |

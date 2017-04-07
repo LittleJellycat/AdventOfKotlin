@@ -1,3 +1,5 @@
+package AoC2015
+
 import java.util.*
 
 val alphabet = arrayOf('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'k',
