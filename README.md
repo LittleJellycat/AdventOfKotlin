@@ -29,7 +29,7 @@ Click on the year to AoC2015.check out the puzzles. Click on the puzzle name to 
 |Aunt Sue                                                                      |  16  |                                      Dragon Checksum|
 |No Such Thing as Too Much                                                     |  17  |                                    Two Steps Forward|
 |Like a GIF For Your Yard                                                      |  18  |                                         Like a Rogue|
-|Medicine for                                                                  |  19  |                             An Elephant Named Joseph|
+|Medicine for Rudolph                                                          |  19  |                             An Elephant Named Joseph|
 |Infinite Elves and Infinite Houses                                            |  20  |                                       Firewall Rules|
 |RPG Simulator 20XX                                                            |  21  |                           Scrambled Letters and Hash|
 |Wizard Simulator 20XX                                                         |  22  |                                       Grid Computing|
