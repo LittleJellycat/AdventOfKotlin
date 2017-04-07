@@ -16,7 +16,7 @@ Click on the year to AoC2015.check out the puzzles. Click on the puzzle name to 
 |[Perfectly Spherical Houses in a Vacuum](../master/src/AoC2015/Spherical.kt)  |  03  |                             Squares With Three Sides|
 |[The Ideal Stocking Stuffer](../master/src/AoC2015/Stocking.kt)               |  04  |                           Security Through Obscurity|
 |[Doesn't He Have Intern-Elves For This?](../master/src/AoC2015/InternElves.kt)|  05  |                      How About a Nice Game of Chess?|
-|[Probably a Fire Hazard](../master/src/AoC2015/FireHazard.kt)                 |  06  |[Signals and Noise](../master/src/AoC2016/Signals.kt)|
+|[Probably a Fire Hazard](../master/src/AoC2015/FireHazard.kt)                 |  06  |                                    Signals and Noise|
 |Some Assembly Required                                                        |  07  |                          Internet Protocol Version 7|
 |Matchsticks                                                                   |  08  |                            Two-Factor Authentication|
 |All in a Single Night                                                         |  09  |                             Explosives in Cyberspace|
@@ -29,7 +29,7 @@ Click on the year to AoC2015.check out the puzzles. Click on the puzzle name to 
 |Aunt Sue                                                                      |  16  |                                      Dragon Checksum|
 |No Such Thing as Too Much                                                     |  17  |                                    Two Steps Forward|
 |Like a GIF For Your Yard                                                      |  18  |                                         Like a Rogue|
-|Medicine for Rudolph                                                          |  19  |                             An Elephant Named Joseph|
+|Medicine for                                                                  |  19  |                             An Elephant Named Joseph|
 |Infinite Elves and Infinite Houses                                            |  20  |                                       Firewall Rules|
 |RPG Simulator 20XX                                                            |  21  |                           Scrambled Letters and Hash|
 |Wizard Simulator 20XX                                                         |  22  |                                       Grid Computing|

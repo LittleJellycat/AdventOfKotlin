@@ -11,14 +11,14 @@ fun main(args: Array<String>) {
 
 fun getNordicLightsPattern(instructions: List<Triple<String, Pair<Int, Int>, Pair<Int, Int>>>): Int {
     val lights: Array<IntArray> = Array(1000) { IntArray(1000) { 0 } }
-    for (instruction in instructions) {
-        val start: Pair<Int, Int> = instruction.second
-        val end: Pair<Int, Int> = instruction.third
-        for (i in start.first..end.first) {
-            for (j in start.second..end.second) {
-                if (instruction.first == "on") {
+    instructions.forEach {
+        val start: Pair<Int, Int> = it.second
+        val end: Pair<Int, Int> = it.third
+        (start.first..end.first).forEach { i ->
+            (start.second..end.second).forEach { j ->
+                if (it.first == "on") {
                     lights[i][j]++
-                } else if (instruction.first == "off") {
+                } else if (it.first == "off") {
                     if(lights[i][j] != 0) {
                         lights[i][j]--
                     }
@@ -44,11 +44,11 @@ fun parseInstructions(line: String): Triple<String, Pair<Int, Int>, Pair<Int, In
 
 fun getLightsPattern(instructions: List<Triple<String, Pair<Int, Int>, Pair<Int, Int>>>): Int {
     val lights: Array<BooleanArray> = Array(1000) { BooleanArray(1000) { false } }
-    for (instruction in instructions) {
+    instructions.forEach { instruction ->
         val start: Pair<Int, Int> = instruction.second
         val end: Pair<Int, Int> = instruction.third
-        for (i in start.first..end.first) {
-            for (j in start.second..end.second) {
+        (start.first..end.first).forEach { i ->
+            (start.second..end.second).forEach { j ->
                 if (instruction.first == "on") {
                     lights[i][j] = true
                 } else if (instruction.first == "off") {

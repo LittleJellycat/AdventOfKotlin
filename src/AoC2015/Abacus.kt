@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
 }
 
 fun findSum(script: String): Int {
-    val line = script.split(":", ",")
-    return line.asSequence().filter { it.matches("^-?\\d+".toRegex()) }
+    return script.split(":", ",").asSequence()
+            .filter { it.matches("^-?\\d+".toRegex()) }
             .map(String::toInt).sum()
 }

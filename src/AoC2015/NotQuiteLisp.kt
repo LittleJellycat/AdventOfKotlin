@@ -4,7 +4,8 @@ import java.io.File
 
 fun findBasement(trace: String): Int {
     var level = 0
-    for (i in (0..trace.length - 1)) { //boring solution
+    (0..trace.length - 1).forEach { i ->
+        //boring solution
         if (trace[i] == '(') {
             level++
         } else {
@@ -17,9 +18,8 @@ fun findBasement(trace: String): Int {
     return 0
 }
 
-fun findFloor(trace: String): Int {
-    return trace.length - 2 * trace.filter { it == ')' }.length
-}
+fun findFloor(trace: String): Int = trace.length - 2 * trace
+        .filter { it == ')' }.length
 
 fun main(args: Array<String>) {
     val trace = File("C:\\Users\\kotat\\input.txt").readText()
