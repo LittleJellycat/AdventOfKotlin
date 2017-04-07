@@ -9,11 +9,11 @@ Some of them were solved but not committed yet. I hope I'll add those ASAP. READ
 Click on the year to AoC2015.check out the puzzles. Click on the puzzle name to look on my solution.
 
 ***
-|[2015](http://adventofcode.com/2015)                                          | Day  |[2016](http://adventofcode.com/2016)  |
-|:----------------------------------------------------------------------------:|:----:|:------------------------------------:|
-|[Not Quite Lisp](../master/src/AoC2015/NotQuiteLisp.kt)                       |  01  |                                No Time for a Taxicab|
-|[I Was Told There Would Be No Math](../master/src/AoC2015/NoMath.kt)          |  02  |                                    Bathroom Security|
-|[Perfectly Spherical Houses in a Vacuum](../master/src/AoC2015/Spherical.kt)  |  03  |                             Squares With Three Sides|
+|[2015](http://adventofcode.com/2015)                                          | Day  |[2016](http://adventofcode.com/2016)                        |
+|:----------------------------------------------------------------------------:|:----:|:----------------------------------------------------------:|
+|[Not Quite Lisp](../master/src/AoC2015/NotQuiteLisp.kt)                       |  01  |[No Time for a Taxicab](../master/src/AoC2016/NoTime.kt)    |
+|[I Was Told There Would Be No Math](../master/src/AoC2015/NoMath.kt)          |  02  |[Bathroom Security](../master/src/AoC2016/Bathroom.kt)      |
+|[Perfectly Spherical Houses in a Vacuum](../master/src/AoC2015/Spherical.kt)  |  03  |[Squares With Three Sides](../master/src/AoC2016/Squares.kt)|
 |[The Ideal Stocking Stuffer](../master/src/AoC2015/Stocking.kt)               |  04  |                           Security Through Obscurity|
 |[Doesn't He Have Intern-Elves For This?](../master/src/AoC2015/InternElves.kt)|  05  |                      How About a Nice Game of Chess?|
 |[Probably a Fire Hazard](../master/src/AoC2015/FireHazard.kt)                 |  06  |                                    Signals and Noise|
