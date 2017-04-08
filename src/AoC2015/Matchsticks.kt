@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
             .readLines()
     val fileSize = lines.sumBy { it.length }
     println(countChars(filterChars(lines), fileSize))
-    println(encode(lines))
+    println(encodeDiff(lines))
 }
 
 fun countChars(lines: List<String>, size: Int): Int {
@@ -23,7 +23,7 @@ fun filterChars(lines: List<String>): List<String> {
     }
 }
 
-fun encode(lines: List<String>): Int {
+fun encodeDiff(lines: List<String>): Int {
     return lines.sumBy {
         2 + it.count { (it == '\\') || (it == '"') }
     }

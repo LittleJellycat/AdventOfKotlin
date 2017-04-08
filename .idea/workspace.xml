@@ -4,6 +4,7 @@
     <list default="true" id="55e57438-851a-47ae-b581-487f681506af" name="Default" comment="Minor changes like lambdas to references">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AoC2015/Opening.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AoC2015/Matchsticks.kt" afterPath="$PROJECT_DIR$/src/AoC2015/Matchsticks.kt" />
     </list>
     <ignored path="AdventOfCode.iws" />
@@ -42,8 +43,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="482">
-                <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+              <first_editor relative-caret-position="694">
+                <caret line="24" column="66" lean-forward="false" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -54,8 +55,8 @@
       <file leaf-file-name="Matchsticks.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AoC2015/Matchsticks.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="742">
-              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+            <state relative-caret-position="848">
+              <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -891,7 +892,7 @@
       <workItem from="1491578465829" duration="2571000" />
       <workItem from="1491581278911" duration="582000" />
       <workItem from="1491583089076" duration="14355000" />
-      <workItem from="1491607034614" duration="4966000" />
+      <workItem from="1491607034614" duration="5118000" />
     </task>
     <task id="LOCAL-00001" summary="Day 11">
       <created>1486144415214</created>
@@ -963,11 +964,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491658781136</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Matchsticks part 2">
+      <created>1491660077589</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1491660077589</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68488000" />
+    <option name="totallyTimeSpent" value="68640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
@@ -1029,7 +1037,8 @@
     <MESSAGE value="AoC 2015 Day 07 both parts" />
     <MESSAGE value="Update README.md &#10;Link to day 07/2015" />
     <MESSAGE value="Matchsticks part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Matchsticks part 1" />
+    <MESSAGE value="Matchsticks part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Matchsticks part 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1393,17 +1402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="482">
-            <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-runtime-sources.jar!/generated/_Strings.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -1412,10 +1410,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="694">
+            <caret line="24" column="66" lean-forward="false" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AoC2015/Matchsticks.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        <state relative-caret-position="848">
+          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding />
         </state>
       </provider>
