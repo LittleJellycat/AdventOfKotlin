@@ -7,20 +7,24 @@ fun main(args: Array<String>) {
             .readLines()
     val fileSize = lines.sumBy { it.length }
     println(countChars(filterChars(lines), fileSize))
+    println(encode(lines))
 }
 
 fun countChars(lines: List<String>, size: Int): Int {
-    var diff = size
-    lines.forEach { diff -= it.length }
-    return diff
+    return size - lines.sumBy { it.length }
 }
 
 fun filterChars(lines: List<String>): List<String> {
-    val clearedLines = lines.map {
+    return lines.map {
         it.trimStart('\"').trimEnd('\"')
                 .replace(Regex("\\\\x[0-9a-f]{2}"), "a")
                 .replace(Regex("\\\\\\\\"), "a")
                 .replace(Regex("\\\\\""), "a")
     }
-    return clearedLines
+}
+
+fun encode(lines: List<String>): Int {
+    return lines.sumBy {
+        2 + it.count { (it == '\\') || (it == '"') }
+    }
 }

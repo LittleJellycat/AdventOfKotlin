@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55e57438-851a-47ae-b581-487f681506af" name="Default" comment="Minor changes like lambdas to references">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AoC2015/Matchsticks.kt" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AoC2015/Opening.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AoC2015/Matchsticks.kt" afterPath="$PROJECT_DIR$/src/AoC2015/Matchsticks.kt" />
     </list>
     <ignored path="AdventOfCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,7 +38,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
@@ -52,11 +51,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Matchsticks.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Matchsticks.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AoC2015/Matchsticks.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="997">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="742">
+              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_Strings.kt" pinned="false" current-in-tab="false">
+        <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-runtime-sources.jar!/generated/_Strings.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="1094" column="31" lean-forward="false" selection-start-line="1094" selection-start-column="31" selection-end-line="1094" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -127,8 +136,8 @@
         <option value="$PROJECT_DIR$/src/AoC2016/Bathroom.kt" />
         <option value="$PROJECT_DIR$/src/AoC2016/Squres.kt" />
         <option value="$PROJECT_DIR$/src/AoC2015/Assembly.kt" />
-        <option value="$PROJECT_DIR$/src/AoC2015/Matchsticks.kt" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/AoC2015/Matchsticks.kt" />
       </list>
     </option>
   </component>
@@ -882,7 +891,7 @@
       <workItem from="1491578465829" duration="2571000" />
       <workItem from="1491581278911" duration="582000" />
       <workItem from="1491583089076" duration="14355000" />
-      <workItem from="1491607034614" duration="3685000" />
+      <workItem from="1491607034614" duration="4966000" />
     </task>
     <task id="LOCAL-00001" summary="Day 11">
       <created>1486144415214</created>
@@ -947,11 +956,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491607222778</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Matchsticks part 1">
+      <created>1491658781136</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1491658781136</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67207000" />
+    <option name="totallyTimeSpent" value="68488000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
@@ -1012,7 +1028,8 @@
     <MESSAGE value="2016: 01-03" />
     <MESSAGE value="AoC 2015 Day 07 both parts" />
     <MESSAGE value="Update README.md &#10;Link to day 07/2015" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update README.md &#10;Link to day 07/2015" />
+    <MESSAGE value="Matchsticks part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Matchsticks part 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1030,18 +1047,6 @@
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/AoC2015/Matchsticks.kt</url>
-          <line>19</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/AoC2015/Matchsticks.kt</url>
-          <line>18</line>
-          <properties />
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/util/Collections.java</url>
           <line>897</line>
@@ -1058,13 +1063,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-runtime-sources.jar!/generated/_Sequences.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16324">
-          <caret line="308" column="27" lean-forward="false" selection-start-line="308" selection-start-column="27" selection-end-line="308" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AoC2015/Corporate.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -1395,14 +1393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AoC2015/Matchsticks.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="997">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -1411,6 +1401,22 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-runtime-sources.jar!/generated/_Strings.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="1094" column="31" lean-forward="false" selection-start-line="1094" selection-start-column="31" selection-end-line="1094" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AoC2015/Matchsticks.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
