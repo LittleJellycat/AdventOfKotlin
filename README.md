@@ -19,7 +19,7 @@ Click on the year to check out the puzzles. Click on the puzzle name to look on 
 |[Probably a Fire Hazard](../master/src/AoC2015/FireHazard.kt)                 |  06  |                                    Signals and Noise|
 |[Some Assembly Required](../master/src/AoC2015/Assembly.kt)                   |  07  |                          Internet Protocol Version 7|
 |[Matchsticks](../master/src/AoC2015/Matchsticks.kt)                           |  08  |                            Two-Factor Authentication|
-|All in a Single Night                                                         |  09  |                             Explosives in Cyberspace|
+|[All in a Single Night](../master/src/AoC2015/SingleNight.kt)                 |  09  |                             Explosives in Cyberspace|
 |[Elves Look, Elves Say](../master/src/AoC2015/LookSay.kt)                     |  10  |                                         Balance Bots|
 |[Corporate Policy](../master/src/AoC2015/Corporate.kt)                        |  11  |               Radioisotope Thermoelectric Generators|
 |JSAbacusFramework.io                                                          |  12  |                                  Leonardo's Monorail|
