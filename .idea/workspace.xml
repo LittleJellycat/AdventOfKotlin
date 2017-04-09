@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55e57438-851a-47ae-b581-487f681506af" name="Default" comment="Minor changes like lambdas to references">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AoC2015/Opening.kt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AoC2015/SingleNight.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AoC2015/Matchsticks.kt" afterPath="$PROJECT_DIR$/src/AoC2015/Matchsticks.kt" />
+    </list>
+    <list id="4b151f01-6af2-4821-84d9-892c87e97494" name="shit" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AoC2015/Opening.kt" />
     </list>
     <ignored path="AdventOfCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,56 +28,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="Assembly.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AoC2015/Assembly.kt">
+      <file leaf-file-name="Opening.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AoC2015/Opening.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="-22">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SingleNight.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AoC2015/SingleNight.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1166">
+              <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
               <folding>
-                <element signature="e#17#86#0" expanded="true" />
+                <element signature="e#17#55#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="694">
-                <caret line="24" column="66" lean-forward="false" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Matchsticks.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AoC2015/Matchsticks.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="848">
-              <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_Strings.kt" pinned="false" current-in-tab="false">
-        <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-runtime-sources.jar!/generated/_Strings.kt">
+      <file leaf-file-name="_Collections.kt" pinned="false" current-in-tab="false">
+        <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-runtime-sources.jar!/generated/_Collections.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="460">
-              <caret line="1094" column="31" lean-forward="false" selection-start-line="1094" selection-start-column="31" selection-end-line="1094" selection-end-column="31" />
+              <caret line="135" column="34" lean-forward="false" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Strings.kt" pinned="false" current-in-tab="false">
-        <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-runtime-sources.jar!/kotlin/text/Strings.kt">
+      <file leaf-file-name="Primitives.kt" pinned="false" current-in-tab="false">
+        <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-runtime-sources.jar!/kotlin/Primitives.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="778">
-              <caret line="112" column="18" lean-forward="false" selection-start-line="112" selection-start-column="18" selection-end-line="112" selection-end-column="18" />
+            <state relative-caret-position="460">
+              <caret line="535" column="30" lean-forward="false" selection-start-line="535" selection-start-column="30" selection-end-line="535" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -139,6 +127,7 @@
         <option value="$PROJECT_DIR$/src/AoC2015/Assembly.kt" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/AoC2015/Matchsticks.kt" />
+        <option value="$PROJECT_DIR$/src/AoC2015/SingleNight.kt" />
       </list>
     </option>
   </component>
@@ -346,7 +335,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.postfix.templates" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../advent" />
     <property name="last.edited.regexp" value="\\" />
@@ -372,20 +361,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.AoC2015.MatchsticksKt">
-    <configuration default="false" name="AoC2015.LookSayKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="AoC2015.LookSayKt" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="AdventOfCode" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Kotlin.AoC2015.SingleNightKt">
     <configuration default="false" name="AoC2015.CorporateKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="AoC2015.CorporateKt" />
@@ -428,6 +404,19 @@
     <configuration default="false" name="AoC2015.MatchsticksKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="AoC2015.MatchsticksKt" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="AdventOfCode" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="AoC2015.SingleNightKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="AoC2015.SingleNightKt" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -827,19 +816,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Kotlin.AoC2015.LookSayKt" />
-      <item index="1" class="java.lang.String" itemvalue="Kotlin.AoC2015.CorporateKt" />
-      <item index="2" class="java.lang.String" itemvalue="Kotlin.AoC2015.AbacusKt" />
-      <item index="3" class="java.lang.String" itemvalue="Kotlin.AoC2015.AssemblyKt" />
-      <item index="4" class="java.lang.String" itemvalue="Kotlin.AoC2015.MatchsticksKt" />
+      <item index="0" class="java.lang.String" itemvalue="Kotlin.AoC2015.CorporateKt" />
+      <item index="1" class="java.lang.String" itemvalue="Kotlin.AoC2015.AbacusKt" />
+      <item index="2" class="java.lang.String" itemvalue="Kotlin.AoC2015.AssemblyKt" />
+      <item index="3" class="java.lang.String" itemvalue="Kotlin.AoC2015.MatchsticksKt" />
+      <item index="4" class="java.lang.String" itemvalue="Kotlin.AoC2015.SingleNightKt" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Kotlin.AoC2015.MatchsticksKt" />
-        <item index="1" class="java.lang.String" itemvalue="Kotlin.AoC2015.AssemblyKt" />
-        <item index="2" class="java.lang.String" itemvalue="Kotlin.AoC2015.AbacusKt" />
-        <item index="3" class="java.lang.String" itemvalue="Kotlin.AoC2015.CorporateKt" />
-        <item index="4" class="java.lang.String" itemvalue="Kotlin.AoC2015.LookSayKt" />
+        <item index="0" class="java.lang.String" itemvalue="Kotlin.AoC2015.SingleNightKt" />
+        <item index="1" class="java.lang.String" itemvalue="Kotlin.AoC2015.MatchsticksKt" />
+        <item index="2" class="java.lang.String" itemvalue="Kotlin.AoC2015.AssemblyKt" />
+        <item index="3" class="java.lang.String" itemvalue="Kotlin.AoC2015.AbacusKt" />
+        <item index="4" class="java.lang.String" itemvalue="Kotlin.AoC2015.CorporateKt" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -876,6 +865,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="55e57438-851a-47ae-b581-487f681506af" name="Default" comment="" />
+      <changelist id="4b151f01-6af2-4821-84d9-892c87e97494" name="shit" comment="" />
       <created>1471807227769</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -892,7 +882,7 @@
       <workItem from="1491578465829" duration="2571000" />
       <workItem from="1491581278911" duration="582000" />
       <workItem from="1491583089076" duration="14355000" />
-      <workItem from="1491607034614" duration="5118000" />
+      <workItem from="1491607034614" duration="16399000" />
     </task>
     <task id="LOCAL-00001" summary="Day 11">
       <created>1486144415214</created>
@@ -971,11 +961,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491660077589</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Minor changes">
+      <created>1491660220825</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1491660220825</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68640000" />
+    <option name="totallyTimeSpent" value="79921000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
@@ -996,7 +993,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298466" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27419356" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27419356" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1038,7 +1035,8 @@
     <MESSAGE value="Update README.md &#10;Link to day 07/2015" />
     <MESSAGE value="Matchsticks part 1" />
     <MESSAGE value="Matchsticks part 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Matchsticks part 2" />
+    <MESSAGE value="Minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1072,14 +1070,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AoC2015/Corporate.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AoC2015/Abacus.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1208,13 +1198,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-runtime-sources.jar!/kotlin/Primitives.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="460" column="24" lean-forward="false" selection-start-line="460" selection-start-column="24" selection-end-line="460" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
@@ -1252,25 +1235,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-runtime-sources.jar!/generated/_Collections.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7155">
-          <caret line="135" column="34" lean-forward="false" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Sample.java" />
-    <entry file="file://$PROJECT_DIR$/src/AoC2015/Opening.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="10" column="50" lean-forward="false" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-          <folding>
-            <element signature="e#17#55#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AoC2015/Abacus.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="742">
@@ -1384,16 +1349,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AoC2015/Assembly.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <element signature="e#17#86#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-runtime-sources.jar!/kotlin/text/Strings.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="778">
@@ -1426,6 +1381,50 @@
         <state relative-caret-position="848">
           <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AoC2015/Assembly.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="e#17#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AoC2015/Opening.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-runtime-sources.jar!/kotlin/Primitives.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="535" column="30" lean-forward="false" selection-start-line="535" selection-start-column="30" selection-end-line="535" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-runtime-sources.jar!/generated/_Collections.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="135" column="34" lean-forward="false" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AoC2015/SingleNight.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1166">
+          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+          <folding>
+            <element signature="e#17#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
