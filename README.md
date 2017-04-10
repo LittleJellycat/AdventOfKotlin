@@ -22,8 +22,8 @@ Click on the year to check out the puzzles. Click on the puzzle name to look on 
 |[All in a Single Night](../master/src/AoC2015/SingleNight.kt)                 |  09  |                             Explosives in Cyberspace|
 |[Elves Look, Elves Say](../master/src/AoC2015/LookSay.kt)                     |  10  |                                         Balance Bots|
 |[Corporate Policy](../master/src/AoC2015/Corporate.kt)                        |  11  |               Radioisotope Thermoelectric Generators|
-|JSAbacusFramework.io                                                          |  12  |                                  Leonardo's Monorail|
-|Knights of the Dinner Table                                                   |  13  |                     A Maze of Twisty Little Cubicles|
+|[JSAbacusFramework.io](../master/src/AoC2015/Abacus.kt)                       |  12  |                                  Leonardo's Monorail|
+|[Knights of the Dinner Table](../master/src/AoC2015/Knights.kt)               |  13  |                     A Maze of Twisty Little Cubicles|
 |Reindeer Olympics                                                             |  14  |                                         One-Time Pad|
 |Science for Hungry People                                                     |  15  |                                 Timing is Everything|
 |Aunt Sue                                                                      |  16  |                                      Dragon Checksum|

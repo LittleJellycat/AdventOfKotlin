@@ -9,7 +9,5 @@ fun main(args: Array<String>) {
 }
 
 fun findSum(script: String): Int {
-    return script.split(":", ",").asSequence()
-            .filter { it.matches("^-?\\d+".toRegex()) }
-            .map(String::toInt).sum()
+    return Regex("-?\\d+").findAll(script).sumBy { it.value.toInt() }
 }

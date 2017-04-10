@@ -34,7 +34,7 @@ private fun list(listOfDistances: List<Triple<String, String, Int>>): List<Int> 
 }
 
 
-fun getPermutations(list: ArrayList<String>): ArrayList<ArrayList<String>> {
+private fun getPermutations(list: ArrayList<String>): ArrayList<ArrayList<String>> {
     if (list.size == 1) return ArrayList(arrayListOf(list))
     val result = ArrayList<ArrayList<String>>()
     list.forEach { str ->
