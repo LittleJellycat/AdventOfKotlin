@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
     }
 }
 
-fun applyGameRules(input: List<Char>): List<Char> {
+private fun applyGameRules(input: List<Char>): List<Char> {
     var stackOfToken = 0
     var lastToken = input.first()
     val outSequence = mutableListOf<Char>()

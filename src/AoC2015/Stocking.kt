@@ -10,7 +10,7 @@ fun main(args: Array<String>) {
     println(findHashWithZeroes(key, 6)) //part 2
 }
 
-fun findHashWithZeroes(key: String, numberOfZeroes: Int): Int {
+private fun findHashWithZeroes(key: String, numberOfZeroes: Int): Int {
     return (1..Int.MAX_VALUE).first {
         DatatypeConverter.printHexBinary(
                 MessageDigest.getInstance("MD5")

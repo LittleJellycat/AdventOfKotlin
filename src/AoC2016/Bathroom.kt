@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
     println(getCode(input))
 }
 
-fun getCode(input: List<String>): List<Int> {
+private fun getCode(input: List<String>): List<Int> {
     var x = 2
     var y = 2 //as for "5" on the num pad
     if (!listOf(Pair(1, 1), Pair(2, 2)).contains(Pair(x, y))) x++

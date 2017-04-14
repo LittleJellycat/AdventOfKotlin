@@ -10,11 +10,11 @@ fun main(args: Array<String>) {
     println(encodeDiff(lines))
 }
 
-fun countChars(lines: List<String>, size: Int): Int {
+private fun countChars(lines: List<String>, size: Int): Int {
     return size - lines.sumBy { it.length }
 }
 
-fun filterChars(lines: List<String>): List<String> {
+private fun filterChars(lines: List<String>): List<String> {
     return lines.map {
         it.trimStart('\"').trimEnd('\"')
                 .replace(Regex("\\\\x[0-9a-f]{2}"), "a")
@@ -23,7 +23,7 @@ fun filterChars(lines: List<String>): List<String> {
     }
 }
 
-fun encodeDiff(lines: List<String>): Int {
+private fun encodeDiff(lines: List<String>): Int {
     return lines.sumBy {
         2 + it.count { (it == '\\') || (it == '"') }
     }

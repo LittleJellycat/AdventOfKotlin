@@ -8,6 +8,6 @@ fun main(args: Array<String>) {
     println(findSum(script))
 }
 
-fun findSum(script: String): Int {
+private fun findSum(script: String): Int {
     return Regex("-?\\d+").findAll(script).sumBy { it.value.toInt() }
 }

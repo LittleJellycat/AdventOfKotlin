@@ -2,7 +2,7 @@ package AoC2015
 
 import java.io.File
 
-fun sumHouses(trace: String): MutableSet<Pair<Int, Int>>{
+private fun sumHouses(trace: String): MutableSet<Pair<Int, Int>>{
     var x = 0
     var y = 0
     val setOfCoords: MutableSet<Pair<Int, Int>> = mutableSetOf(x to y)
@@ -18,9 +18,9 @@ fun sumHouses(trace: String): MutableSet<Pair<Int, Int>>{
     return setOfCoords //now returns the set itself
 }
 
-fun sumHousesForBoth(trace: String): Set<Pair<Int, Int>>{
-    return (sumHouses(trace.filterIndexed { i, c -> i % 2 == 0 })
-            .union(sumHouses(trace.filterIndexed { i, c -> i % 2 != 0 })))
+private fun sumHousesForBoth(trace: String): Set<Pair<Int, Int>>{
+    return (sumHouses(trace.filterIndexed { i, _ -> i % 2 == 0 })
+            .union(sumHouses(trace.filterIndexed { i, _ -> i % 2 != 0 })))
 }
 
 fun main(args: Array<String>) {

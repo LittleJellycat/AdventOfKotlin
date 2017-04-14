@@ -12,8 +12,8 @@ fun main(args: Array<String>) {
     println(findWireSignal(parseWires(newInstructions), "a"))
 }
 
-fun parseWires(instructions: List<String>): MutableList<Pair<String, WireFunction>> {
-    val parsedInstructions: MutableList<Pair<String, WireFunction>> = ArrayList<Pair<String, WireFunction>>()
+private fun parseWires(instructions: List<String>): MutableList<WireDescription> {
+    val parsedInstructions: MutableList<WireDescription> = ArrayList()
     instructions.forEach { instruction ->
         if (instruction.matches(Regex("[0-9a-z]+ -> [a-z]+"))) {
             val instr = instruction.split(" -> ") // expr[0] expr[1]
@@ -31,7 +31,7 @@ fun parseWires(instructions: List<String>): MutableList<Pair<String, WireFunctio
     return parsedInstructions
 }
 
-fun findWireSignal(instructions: MutableList<Pair<String, WireFunction>>, wire: String): Int {
+private fun findWireSignal(instructions: MutableList<WireDescription>, wire: String): Int {
     val values = HashMap<String, Int>()
     while (instructions.isNotEmpty()) {
         val expr = instructions.removeAt(0)
@@ -55,6 +55,8 @@ fun findWireSignal(instructions: MutableList<Pair<String, WireFunction>>, wire: 
     return values.getOrDefault(wire, -1)
 }
 
-fun isNumeric(input: String): Boolean = input.toCharArray().all(Char::isDigit)
+private fun isNumeric(input: String): Boolean = input.toCharArray().all(Char::isDigit)
 
-data class WireFunction(val name: String, val args: List<String>)
+private data class WireFunction(val name: String, val args: List<String>)
+
+private typealias WireDescription = Pair<String, WireFunction>

@@ -2,14 +2,15 @@ package AoC2015
 
 import java.io.File
 
-
 fun main(args: Array<String>) {
     val instructions = File("C:\\Users\\kotat\\input.txt").readLines().map { parseInstructions(it) }
     println(getLightsPattern(instructions))
     println(getNordicLightsPattern(instructions))
 }
 
-fun getNordicLightsPattern(instructions: List<Triple<String, Pair<Int, Int>, Pair<Int, Int>>>): Int {
+private typealias toggleInstruction = Triple<String, Pair<Int, Int>, Pair<Int, Int>>
+
+private fun getNordicLightsPattern(instructions: List<toggleInstruction>): Int {
     val lights: Array<IntArray> = Array(1000) { IntArray(1000) { 0 } }
     instructions.forEach {
         val start: Pair<Int, Int> = it.second
@@ -19,11 +20,11 @@ fun getNordicLightsPattern(instructions: List<Triple<String, Pair<Int, Int>, Pai
                 if (it.first == "on") {
                     lights[i][j]++
                 } else if (it.first == "off") {
-                    if(lights[i][j] != 0) {
+                    if (lights[i][j] != 0) {
                         lights[i][j]--
                     }
                 } else { //toggle
-                    lights[i][j] +=2
+                    lights[i][j] += 2
                 }
             }
         }
@@ -31,7 +32,7 @@ fun getNordicLightsPattern(instructions: List<Triple<String, Pair<Int, Int>, Pai
     return lights.flatMap { it.asIterable() }.sum()
 }
 
-fun parseInstructions(line: String): Triple<String, Pair<Int, Int>, Pair<Int, Int>> {
+private fun parseInstructions(line: String): toggleInstruction {
     val rawLineList = line.split("[\\s,]".toRegex())
     val parsedLine: Triple<String, Pair<Int, Int>, Pair<Int, Int>> = when (rawLineList[0]) {
         "turn" -> Triple(rawLineList[1], rawLineList[2].toInt() to rawLineList[3].toInt(), //turn off or turn on
@@ -42,7 +43,7 @@ fun parseInstructions(line: String): Triple<String, Pair<Int, Int>, Pair<Int, In
     return parsedLine
 }
 
-fun getLightsPattern(instructions: List<Triple<String, Pair<Int, Int>, Pair<Int, Int>>>): Int {
+private fun getLightsPattern(instructions: List<toggleInstruction>): Int {
     val lights: Array<BooleanArray> = Array(1000) { BooleanArray(1000) { false } }
     instructions.forEach { instruction ->
         val start: Pair<Int, Int> = instruction.second
@@ -59,5 +60,5 @@ fun getLightsPattern(instructions: List<Triple<String, Pair<Int, Int>, Pair<Int,
             }
         }
     }
-    return lights.flatMap { it.asIterable() }.count{it}
+    return lights.flatMap { it.asIterable() }.count { it }
 }

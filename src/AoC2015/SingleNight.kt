@@ -11,14 +11,15 @@ fun main(args: Array<String>) {
     println(findLongestDistanceLength(listOfDistances))
 }
 
-fun findShortestDistanceLength(listOfDistances: List<Triple<String, String, Int>>) =
+private fun findShortestDistanceLength(listOfDistances: PairsToInts) =
         list(listOfDistances).min() ?: Int.MAX_VALUE
 
-fun findLongestDistanceLength(listOfDistances: List<Triple<String, String, Int>>) =
+private fun findLongestDistanceLength(listOfDistances: PairsToInts) =
         list(listOfDistances).max() ?: Int.MIN_VALUE
 
-private fun list(listOfDistances: List<Triple<String, String, Int>>): List<Int> {
-    val locations = listOfDistances.flatMap { listOf(it.first, it.second) }.distinct() as ArrayList
+private fun list(listOfDistances: PairsToInts): List<Int> {
+    val locations = listOfDistances.flatMap { listOf(it.first, it.second) }
+            .distinct() as ArrayList
     val permutations = getPermutations(locations)
     val distances = permutations.map { permutation ->
         (0..permutation.size - 2)
@@ -32,7 +33,6 @@ private fun list(listOfDistances: List<Triple<String, String, Int>>): List<Int> 
     }
     return distances
 }
-
 
 private fun getPermutations(list: ArrayList<String>): ArrayList<ArrayList<String>> {
     if (list.size == 1) return ArrayList(arrayListOf(list))
@@ -48,3 +48,5 @@ private fun getPermutations(list: ArrayList<String>): ArrayList<ArrayList<String
     }
     return result
 }
+
+private typealias PairsToInts = List<Triple<String, String, Int>>

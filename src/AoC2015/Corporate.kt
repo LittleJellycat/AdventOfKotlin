@@ -27,7 +27,7 @@ private fun iterate(password: CharArray): CharArray {
     return password
 }
 
-fun check(password: CharArray): Boolean {
+private fun check(password: CharArray): Boolean {
     return checkPairs(password) && checkAscending(password)
 }
 

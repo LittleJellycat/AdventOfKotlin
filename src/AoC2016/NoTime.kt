@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
     println(findGridPathLength(trace))
 }
 
-fun findGridPathLength(trace: List<String>): Int {
+private fun findGridPathLength(trace: List<String>): Int {
     val coords: MutablePair = MutablePair(0, 0)
     var direction = 0
     val listOfCoords = ArrayList<Pair<Int, Int>>()
@@ -35,6 +35,6 @@ fun findGridPathLength(trace: List<String>): Int {
     return Math.abs(coords.first) + Math.abs(coords.second)
 }
 
-data class MutablePair(var first: Int, var second: Int) {
+private data class MutablePair(var first: Int, var second: Int) {
     fun toPair(): Pair<Int, Int> = Pair(first, second)
 }
