@@ -2,7 +2,7 @@ import java.nio.file.Files
 import java.nio.file.Paths
 
 fun main(args: Array<String>) {
-    val ints = Files.readAllLines(Paths.get("C:\\Users\\MMUSER\\IdeaProjects\\untitled1\\src\\checksum.txt"))
+    val ints = Files.readAllLines(Paths.get(" "))
             .map {
                 it.replace(Regex("\\s+"), " ")
                         .split(" ")

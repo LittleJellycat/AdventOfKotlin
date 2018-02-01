@@ -1,8 +1,6 @@
 fun main(args: Array<String>) {
     val input = 347991
     println(calculateDistance(input))
-
-
 }
 
 private fun calculateDistance(cell: Int): Int {
