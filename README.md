@@ -4,7 +4,7 @@ http://adventofcode.com/
 
 Puzzles are solved in Kotlin language. 
 
-Some of them were solved but not committed yet. I hope I'll add those ASAP. README.md is under construct. :D
+I'm still working on these.
 
 Click on the year to check out the puzzles. Click on the puzzle name to look on my solution.
 
