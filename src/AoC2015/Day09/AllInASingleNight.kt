@@ -19,26 +19,24 @@ private fun findLongestDistanceLength(listOfDistances: PairsToInts) =
 
 private fun list(listOfDistances: PairsToInts): List<Int> {
     val locations = listOfDistances.flatMap { listOf(it.first, it.second) }
-            .distinct() as ArrayList
+            .distinct()
     val permutations = getPermutations(locations)
-    val distances = permutations.map { permutation ->
-        (0..permutation.size - 2)
-                .map { permutation[it] to permutation[it + 1] }
-                .map { pair ->
+    return permutations.map {
+        it.zipWithNext()
+                .map { (first, second) ->
                     listOfDistances.find {
-                        (it.first == pair.first && it.second == pair.second)
-                                || (it.first == pair.second && it.second == pair.first)
+                        (it.first == first && it.second == second)
+                                || (it.first == second && it.second == first)
                     }!!.third
                 }.sum()
     }
-    return distances
 }
 
-private fun getPermutations(list: ArrayList<String>): ArrayList<ArrayList<String>> {
-    if (list.size == 1) return ArrayList(arrayListOf(list))
-    val result = ArrayList<ArrayList<String>>()
+private fun getPermutations(list: List<String>): MutableList<MutableList<String>> {
+    if (list.size == 1) return mutableListOf(list.toMutableList())
+    val result = mutableListOf<MutableList<String>>()
     list.forEach { str ->
-        val strings = ArrayList<String>(list)
+        val strings = list.toMutableList()
         strings.remove(str)
         val permutations = getPermutations(strings)
         permutations.forEach {

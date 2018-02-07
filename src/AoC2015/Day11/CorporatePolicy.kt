@@ -1,59 +1,34 @@
 package AoC2015.Day11
 
-import java.util.*
-
-val alphabet = arrayOf('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'k',
+val alphabet = listOf('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'k',
         'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z')
 
 fun main(args: Array<String>) {
     val oldPassword = "hepxcrrq"
-    var newPassword = oldPassword.toCharArray()
-
-    newPassword.reverse()
-    while (!check(newPassword)) {
-        newPassword = iterate(newPassword)
-    }
-    newPassword.reverse()
-    println(newPassword)
+    println(generateNext(oldPassword))
+    println(generateNext(generateNext(oldPassword)))
 }
 
-private fun iterate(password: CharArray): CharArray {
-    var i = 0
+private fun generateNext(oldPassword: String): String =
+        generateSequence(oldPassword.toMutableList(), ::iterate).drop(1).first(::check).joinToString("")
+
+private fun iterate(password: MutableList<Char>): MutableList<Char> {
+    var i = password.size - 1
     while (password[i] == 'z') {
         password[i] = 'a'
-        i++
+        i--
     }
     password[i] = alphabet[alphabet.indexOf(password[i]) + 1]
     return password
 }
 
-private fun check(password: CharArray): Boolean {
-    return checkPairs(password) && checkAscending(password)
-}
+private fun check(password: MutableList<Char>): Boolean = checkPairs(password) && checkAscending(password)
 
-fun checkAscending(password: CharArray): Boolean {
-    password.reverse()
-    val result = (0..alphabet.size - 3)
-            .map { Arrays.copyOfRange(alphabet, it, it + 3) }
-            .any {
-                Collections.indexOfSubList(password.toList(),
-                        it.toList()) > -1
-            }
-    password.reverse()
-    return result
-}
-
-fun checkPairs(password: CharArray): Boolean {
-    var letter = '0'
-    var pairedLetter = '0'
-    var pairsFound = 0
-    password.forEach {
-        if ((it == letter) && (it != pairedLetter)) {
-            pairedLetter = it
-            pairsFound++
-        } else letter = it
-    }
-    return pairsFound > 1
-}
+private fun checkAscending(password: List<Char>): Boolean = password.windowed(3)
+        .any { (first, second, third) ->
+            second - first == 1 && third - second == 1
+        }
 
 
+private fun checkPairs(password: List<Char>): Boolean = password.zipWithNext().distinct()
+        .count { it.first == it.second } > 1

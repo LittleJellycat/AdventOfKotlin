@@ -5,7 +5,7 @@ import java.io.File
 private fun sumHouses(trace: String): MutableSet<Pair<Int, Int>>{
     var x = 0
     var y = 0
-    val setOfCoords: MutableSet<Pair<Int, Int>> = mutableSetOf(x to y)
+    val setOfCoordinates: MutableSet<Pair<Int, Int>> = mutableSetOf(x to y)
     trace.asSequence().forEach {
         when(it){
             '>' -> x++
@@ -13,9 +13,9 @@ private fun sumHouses(trace: String): MutableSet<Pair<Int, Int>>{
             '^' -> y++
             'v' -> y--
         }
-        setOfCoords.add(x to y)
+        setOfCoordinates.add(x to y)
     }
-    return setOfCoords //now returns the set itself
+    return setOfCoordinates //now returns the set itself
 }
 
 private fun sumHousesForBoth(trace: String): Set<Pair<Int, Int>>{

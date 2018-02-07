@@ -14,9 +14,9 @@ private fun countChars(lines: List<String>, size: Int): Int = size - lines.sumBy
 
 private fun filterChars(lines: List<String>): List<String> = lines.map {
     it.trimStart('\"').trimEnd('\"')
-            .replace(Regex("\\\\x[0-9a-f]{2}"), "a")
-            .replace(Regex("\\\\\\\\"), "a")
-            .replace(Regex("\\\\\""), "a")
+            .replace(Regex("""\\x[0-9a-f]{2}"""), "a")
+            .replace(Regex("""\\\\"""), "a")
+            .replace(Regex("""\\""""), "a")
 }
 
 private fun encodeDiff(lines: List<String>): Int = lines.sumBy {

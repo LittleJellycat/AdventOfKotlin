@@ -3,7 +3,7 @@ package AoC2015.Day06
 import java.io.File
 
 fun main(args: Array<String>) {
-    val instructions = File(args[0]).readLines().map { parseInstructions(it) }
+    val instructions = File(args[0]).readLines().map(::parseInstructions)
     println(getLightsPattern(instructions))
     println(getNordicLightsPattern(instructions))
 }
@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
 private typealias toggleInstruction = Triple<String, Pair<Int, Int>, Pair<Int, Int>>
 
 private fun getNordicLightsPattern(instructions: List<toggleInstruction>): Int {
-    val lights: Array<IntArray> = Array(1000) { IntArray(1000) { 0 } }
+    val lights: Array<IntArray> = Array(1000) { IntArray(1000) }
     instructions.forEach {
         val start: Pair<Int, Int> = it.second
         val end: Pair<Int, Int> = it.third
@@ -34,13 +34,12 @@ private fun getNordicLightsPattern(instructions: List<toggleInstruction>): Int {
 
 private fun parseInstructions(line: String): toggleInstruction {
     val rawLineList = line.split("[\\s,]".toRegex())
-    val parsedLine: Triple<String, Pair<Int, Int>, Pair<Int, Int>> = when (rawLineList[0]) {
+    return when (rawLineList[0]) {
         "turn" -> Triple(rawLineList[1], rawLineList[2].toInt() to rawLineList[3].toInt(), //turn off or turn on
                 rawLineList[5].toInt() to rawLineList[6].toInt())
         else -> Triple(rawLineList[0], rawLineList[1].toInt() to rawLineList[2].toInt(), //toggle
                 rawLineList[4].toInt() to rawLineList[5].toInt())
     }
-    return parsedLine
 }
 
 private fun getLightsPattern(instructions: List<toggleInstruction>): Int {
@@ -50,12 +49,10 @@ private fun getLightsPattern(instructions: List<toggleInstruction>): Int {
         val end: Pair<Int, Int> = instruction.third
         (start.first..end.first).forEach { i ->
             (start.second..end.second).forEach { j ->
-                if (instruction.first == "on") {
-                    lights[i][j] = true
-                } else if (instruction.first == "off") {
-                    lights[i][j] = false
-                } else { //toggle
-                    lights[i][j] = !lights[i][j]
+                when {
+                    instruction.first == "on" -> lights[i][j] = true
+                    instruction.first == "off" -> lights[i][j] = false
+                    else -> lights[i][j] = !lights[i][j] //toggle
                 }
             }
         }

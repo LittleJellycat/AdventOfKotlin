@@ -5,8 +5,7 @@ import java.util.*
 import java.util.Arrays.asList
 
 fun main(args: Array<String>) {
-    val rawInstructions = File(args[0])
-            .readLines()
+    val rawInstructions = File(args[0]).readLines()
     println(findWireSignal(parseWires(rawInstructions), "a"))
     val newInstructions = rawInstructions.map { if (it.matches(Regex("[0-9a-z]+ -> b"))) "16076 -> b" else it }
     println(findWireSignal(parseWires(newInstructions), "a"))
@@ -15,17 +14,21 @@ fun main(args: Array<String>) {
 private fun parseWires(instructions: List<String>): MutableList<WireDescription> {
     val parsedInstructions: MutableList<WireDescription> = ArrayList()
     instructions.forEach { instruction ->
-        if (instruction.matches(Regex("[0-9a-z]+ -> [a-z]+"))) {
-            val instr = instruction.split(" -> ") // expr[0] expr[1]
-            parsedInstructions.add(Pair(instr[1],
-                    WireFunction("ASSERT", asList(instr[0]))))
-        } else if (instruction.matches(Regex("NOT [0-9a-z]+ -> [a-z]+"))) {
-            val instr = instruction.split(" ") // NOT[0] expr[1] ->[2] expr[3]
-            parsedInstructions.add(Pair(instr[3],
-                    WireFunction("NOT", asList(instr[1]))))
-        } else { //Regex("[0-9a-z]+ (AND|OR|RSHIFT|LSHIFT) -> [a-z]+")
-            val instr = instruction.split(" ") // expr[0] name[1] expr[2] ->[3] expr[4]
-            parsedInstructions.add(Pair(instr[4], WireFunction(instr[1], asList(instr[0], instr[2]))))
+        when {
+            instruction.matches(Regex("[0-9a-z]+ -> [a-z]+")) -> {
+                val instr = instruction.split(" -> ") // expr[0] expr[1]
+                parsedInstructions.add(Pair(instr[1],
+                        WireFunction("ASSERT", asList(instr[0]))))
+            }
+            instruction.matches(Regex("NOT [0-9a-z]+ -> [a-z]+")) -> {
+                val instr = instruction.split(" ") // NOT[0] expr[1] ->[2] expr[3]
+                parsedInstructions.add(Pair(instr[3],
+                        WireFunction("NOT", asList(instr[1]))))
+            }
+            else -> { //Regex("[0-9a-z]+ (AND|OR|RSHIFT|LSHIFT) -> [a-z]+")
+                val instr = instruction.split(" ") // expr[0] name[1] expr[2] ->[3] expr[4]
+                parsedInstructions.add(Pair(instr[4], WireFunction(instr[1], asList(instr[0], instr[2]))))
+            }
         }
     }
     return parsedInstructions
@@ -47,9 +50,9 @@ private fun findWireSignal(instructions: MutableList<WireDescription>, wire: Str
                 "OR" -> args[0]?.or(args[1] ?: 0)
                 else -> throw IllegalStateException("Wrong pattern")
             }
-            values.put(expr.first, result ?: -1)
+            values[expr.first] = result ?: -1
         } else {
-            instructions.add(expr)
+            instructions += expr
         }
     }
     return values.getOrDefault(wire, -1)

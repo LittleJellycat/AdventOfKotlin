@@ -18,8 +18,7 @@ private fun findBasement(trace: String): Int {
     return 0
 }
 
-private fun findFloor(trace: String): Int = trace.length - 2 * trace
-        .filter { it == ')' }.length
+private fun findFloor(trace: String): Int = trace.length - 2 * trace.filter { it == ')' }.length
 
 fun main(args: Array<String>) {
     val trace = File(args[0]).readText()
