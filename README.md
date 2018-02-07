@@ -25,7 +25,7 @@ Click on the year to check out the puzzles. Click on the puzzle name to look on 
 |09 |[All in a Single Night](../master/src/AoC2015/Day09/AllInASingleNight.kt) :star2:                                  |                            Explosives in Cyberspace|
 |10 |[Elves Look, Elves Say](../master/src/AoC2015/Day10/ElvesLookElvesSay.kt) :star2:                                  |                                        Balance Bots|
 |11 |[Corporate Policy](../master/src/AoC2015/Day11/CorporatePolicy.kt) :star2:                                         |               Radioisotope Thermoelectric Generators|
-|12 |[JSAbacusFramework.io](../master/src/AoC2015/Day12/JsAbacusFrameworkIO.kt) :star:                                  |                                Leonardo's Monorail|
+|12 |[JSAbacusFramework.io](../master/src/AoC2015/Day12/JsAbacusFrameworkIO.kt) :star2:                                 |                                Leonardo's Monorail|
 |13 |[Knights of the Dinner Table](../master/src/AoC2015/Day13/KnightsOfTheDinnerTable.kt) :star2:                      |                     A Maze of Twisty Little Cubicles|
 |14 |[Reindeer Olympics](../master/src/AoC2015/Day14/ReindeerOlympics.kt) :star2:                                       |                                         One-Time Pad|
 |15 |[Science for Hungry People](../master/src/AoC2015/Day15/ScienceForHungryPeople.kt) :star2:                         |                                 Timing is Everything|
@@ -33,9 +33,9 @@ Click on the year to check out the puzzles. Click on the puzzle name to look on 
 |17 |[No Such Thing as Too Much](../master/src/AoC2015/Day17/NoSuchThingAsTooMuch.kt) :star2:                           |                                   Two Steps Forward|
 |18 |[Like a GIF For Your Yard](../master/src/AoC2015/Day18/LikeAGifForYourYard.kt) :star2:                             |                                         Like a Rogue|
 |19 |[Medicine for Rudolph](../master/src/AoC2015/Day19/MedicineForRudolf.kt) :star2:                                   |                           An Elephant Named Joseph|
-|20 |[Infinite Elves and Infinite Houses](../master/src/AoC2015/Day20/InfiniteElvesAndInfiniteHouses.kt) :star:         |                                       Firewall Rules|
+|20 |[Infinite Elves and Infinite Houses](../master/src/AoC2015/Day20/InfiniteElvesAndInfiniteHouses.kt) :star2:        |                                       Firewall Rules|
 |21 |[RPG Simulator 20XX](../master/src/AoC2015/Day21/RpgSimulator20XX.kt) :star2:                                      |                          Scrambled Letters and Hash|
 |22 |[Wizard Simulator 20XX](../master/src/AoC2015/Day22/WizardSimulator20XX.kt) :star2:                                |                                      Grid Computing|
 |23 |[Opening the Turing Lock](../master/src/AoC2015/Day23/OpeningTheTuringLock.kt) :star2:                             |                                       Safe Cracking|
 |24 |[It Hangs in the Balance](../master/src/AoC2015/Day24/ItHangsInTheBalance.kt) :star2:                              |                                 Air Duct Spelunking|
-|25 |[Let It Snow](../master/src/AoC2015/Day25/LetItSnow.kt) :star:                                                     |                                       Clock Signal|
+|25 |[Let It Snow](../master/src/AoC2015/Day25/LetItSnow.kt) :star2:                                                    |                                       Clock Signal|
