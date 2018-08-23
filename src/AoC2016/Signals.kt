@@ -1,11 +1,12 @@
 package AoC2016
 
+import java.io.File
 import java.nio.file.Files
 import java.nio.file.Paths
 import java.util.*
 
 fun main(args: Array<String>) {
-    val input = Files.readAllLines(Paths.get("C:\\Users\\MMUSER\\IdeaProjects\\AdventOfKotlin\\src\\AoC2016\\input"))
+    val input = File(args[0]).readLines()
     val rotated = ArrayList<String>()
     for (i in 0 until input.first().length) {
         val word = StringBuilder()

@@ -1,8 +1,9 @@
+import java.io.File
 import java.nio.file.Files
 import java.nio.file.Paths
 
 fun main(args: Array<String>) {
-    val ints = Files.readAllLines(Paths.get(" "))
+    val ints = File(args[0]).readLines()
             .map {
                 it.replace(Regex("\\s+"), " ")
                         .split(" ")
