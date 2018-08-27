@@ -1,7 +1,11 @@
 package AoC2017.Day09
 
-fun main(args: Array<String>) {
+import java.io.File
 
+fun main(args: Array<String>) {
+    val input = File(args[0]).readText()
+//    println(countScore(removeGarbage(removeCancelled(input))))
+    println(countGarbage(removeCancelled(input)))
 }
 
 private fun removeCancelled(input: String): String {
@@ -48,4 +52,22 @@ private fun countScore(input: String): Int {
         }
     }
     return total
+}
+
+private fun countGarbage(input: String): Int {
+    var count = 0
+    var i = 0
+    var isGarbage = false
+    while (i < input.length) {
+        val current = input[i]
+        if (isGarbage && current != '>') {
+            count++
+        } else if (current == '<' && !isGarbage) {
+            isGarbage = true
+        } else if (current == '>') {
+            isGarbage = false
+        }
+        i++
+    }
+    return count
 }
